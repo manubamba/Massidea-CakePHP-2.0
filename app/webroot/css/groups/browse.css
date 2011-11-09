@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+/**
+ * Content controller general CSS file
+ *
+ * ID:s that are used by layout and layout.css and must not be used to avoid duplicate id's:
+ * #alert 
+ * #background
+ * #container 
+ * #header 
+ * #title
+ * #search
+ * #search-top
+ * #search-field 
+ * #globalSearch
+ * #search-submit
+ * #submitsearch 
+ * #select
+ */
+ 
+ /**
+ * CSS "constants" cheat sheet
+ *
+ * RED 		= #D21034
+ * BLUE		= #0089CF
+ * GREEN	= #4B9B07
+ * YELLOW	= #FFC726
+ * DEEPBLUE	= #003581
+ * GREY		= #CCCCCC
+ */
+ 
+#groups #browse-page .group_row { width: 500px; padding-left: 5px; display: block; }
+#groups #browse-page .group { background: url("../../img/gray_dot_line_500.png") no-repeat scroll center bottom transparent; margin-bottom: 10px; padding: 0 0 8px; }
+#groups #browse-page .group .photo { float: left; margin: 0 10px 0 0; width: 48px; height: 48px; }
+#groups #browse-page .group .challenge { border-left: 5px solid #D21034; }
+#groups #browse-page .group .idea { border-left: 5px solid #4B9B07; }
+#groups #browse-page .group .vision { border-left: 5px solid #FFC726; }
+#groups #browse-page .group .photo img { width: 48px; height: 48px;  }
+#groups #browse-page .group .context { width: 485px; }
+#groups #browse-page .group .context h3,
+#groups #browse-page .group .context p { margin: 2px; }
+#groups #browse-page .group p.translate { color: #999 }
+#groups #browse-page .summary_translatelink_meta { display:none; }

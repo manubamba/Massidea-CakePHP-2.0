@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+#header #search #submitsearch  { position:relative; top:0px; margin:0px 0px 8px 5px; }
+#header #search #search-submit  { float:right; width:50px; margin-left:-35px; }
+#header #search #select { margin-top:-3px; }
+#header #search #search-top #user_options { top: 25px; }
+#privatemessages div.ui-buttonset-multi { width:100%; }
+#privatemessages .delete-message { margin-left: -10px; }
+#sidebar #tags-container ul li a.tagAddLink { width: 22px; height: 16px; }
+#privatemessages .DTTT_container { width: 40% !important; }

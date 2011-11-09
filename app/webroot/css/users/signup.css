@@ -1,0 +1,88 @@
+@CHARSET "UTF-8";
+/**
+ * User controller signup action CSS file
+ *
+ * ID:s that are used by layout and layout.css and must not be used to avoid duplicate id's:
+ * #alert 
+ * #background
+ * #container 
+ * #header 
+ * #title
+ * #search
+ * #search-top
+ * #search-field 
+ * #globalSearch
+ * #search-submit
+ * #submitsearch 
+ * #select
+ */
+ 
+ /**
+ * CSS "constants" cheat sheet
+ *
+ * RED 		= #D21034
+ * BLUE		= #0089CF
+ * GREEN	= #4B9B07
+ * YELLOW	= #FFC726
+ * DEEPBLUE	= #003581
+ * GREY		= #CCCCCC
+ */
+
+#content #UserSignupForm h2 {
+	color: #AAA;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	background: transparent url("../../img/gray_dot_line_500.png") bottom no-repeat;
+}
+
+#content #UserSignupForm fieldset {
+	margin: 5px 0 5px 0;
+}
+
+#content #UserSignupForm fieldset .input {
+	clear: left;
+	display: block;
+}
+
+#content #UserSignupForm fieldset .input label {
+	font-weight: bold;
+	width: 160px;
+	display: block;
+	float: left;
+	padding: 3px 0 1px 0;
+}
+
+#content #UserSignupForm fieldset .input input, select {
+	border: 1px solid #7F9DB9;
+	background-color: #FAFAFA;
+	width: 260px;
+	padding: 2px 0 2px 0;
+}
+
+#content #UserSignupForm fieldset .input .ajax-indicator {
+	font-weight: bold;
+	margin-left: 5px;
+	display: inline;	
+}
+
+#content #UserSignupForm fieldset .input .ajax-indicator img {
+	vertical-align: top;
+}
+
+#content #UserSignupForm .separator {
+	padding: 5px 0 5px 0;
+}
+
+#content #UserSignupForm .recaptcha-label {
+	padding-top: 5px;
+}
+
+#content #UserSignupForm .submit {
+	padding-top: 10px;
+}
+
+#content #UserSignupForm .error-message {
+	color: red;
+}

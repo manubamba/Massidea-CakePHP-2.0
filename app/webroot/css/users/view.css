@@ -1,0 +1,80 @@
+@CHARSET "UTF-8";
+/**
+ * User controller view action CSS file
+ *
+ * ID:s that are used by layout and layout.css and must not be used to avoid duplicate id's:
+ * #alert 
+ * #background
+ * #container 
+ * #header 
+ * #title
+ * #search
+ * #search-top
+ * #search-field 
+ * #globalSearch
+ * #search-submit
+ * #submitsearch 
+ * #select
+ */
+ 
+ /**
+ * CSS "constants" cheat sheet
+ *
+ * RED 		= #D21034
+ * BLUE		= #0089CF
+ * GREEN	= #4B9B07
+ * YELLOW	= #FFC726
+ * DEEPBLUE	= #003581
+ * GREY		= #CCCCCC
+ */
+
+#users {
+	margin-top: 15px;
+}
+
+#user-view-leftside {
+	float:left;
+	width: 140px;
+}
+
+#user-view-leftside #metadata {
+	font-size: 9pt;
+}
+
+#user-view-rightside {
+	float:left;
+}
+
+#user-view-editaccount {
+	float: right;
+	padding: 3px;
+}
+
+#user-view-activity {
+	float: left;
+	width: 100%;
+	display: none;
+}
+
+#user-view-activity #activityMenu, #activityContent {
+	float: left;
+}
+
+/* for debugging purposes :)
+#users #view-page div {
+	border: 1px dotted gray;
+}
+*/
+.data-label {
+	display: block;
+	font-weight: bold;
+	color: #666;
+}
+
+.data-value {
+	display: block;
+	margin: 0 0 4px 0;
+	color: #333;
+}
+
+.clear { clear:both; }

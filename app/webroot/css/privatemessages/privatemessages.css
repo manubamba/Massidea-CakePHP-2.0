@@ -1,0 +1,150 @@
+@CHARSET "UTF-8";
+
+@import "../datatables/demo_table_jui.css";
+
+
+/**
+ * Content controller general CSS file
+ *
+ * ID:s that are used by layout and layout.css and must not be used to avoid duplicate id's:
+ * #alert
+ * #background
+ * #container
+ * #header
+ * #title
+ * #search
+ * #search-top
+ * #search-field
+ * #globalSearch
+ * #search-submit
+ * #submitsearch
+ * #select
+ */
+
+/**
+ * CSS "constants" cheat sheet
+ *
+ * RED 		= #D21034
+ * BLUE		= #0089CF
+ * GREEN	= #4B9B07
+ * YELLOW	= #FFC726
+ * DEEPBLUE	= #003581
+ * GREY		= #CCCCCC
+ */
+ 
+
+#privatemessages .title-icon {
+	padding: 2px;
+}
+
+#privatemessages .message-from {
+	font-size: 12px;
+	width: 150px;
+}
+
+
+#privatemessages .message-header {
+	padding: 4px;
+}
+
+#privatemessages .private-message {
+	font-size: 12px;
+}
+
+#sidebar .wide {
+	width: 80%;
+}
+#sidebar .border-tag { border-left: 5px solid #ccc; padding-left: 5px !important; }
+#privatemessages h2 {
+	font-size: 18px;
+	margin-top: 15px;
+	padding: 0 0 10px;
+}
+
+#privatemessages .confirm-delete {
+	font-size: 11px;
+}
+
+#privatemessages.contentWithSidebar {
+	width: 567px;
+}
+
+#sidebar.left {
+	width: 140px !important;
+}
+
+
+#privatemessages td {
+	vertical-align: middle;
+}
+
+#privatemessages th {
+	vertical-align: middle;
+}
+
+#privatemessages thead tr, #privatemessages tfoot tr{
+	height: 40px;
+	
+}
+
+#privatemessages tbody tr.odd , #privatemessages tbody tr.even   {
+
+	cursor: pointer;
+}
+/*#privatemessages tbody tr.odd td.message_td, #privatemessages tbody tr.even td.message_td{
+*/
+#privatemessages tbody tr td.message_td {
+	cursor: default;
+}
+
+
+#privatemessages th {
+	padding: 0;
+	/*border-right: 0px;*/
+	border: 0;
+}
+#privatemessages th.message-username {
+	padding: 0;
+	border-left: 0px;
+}
+
+#privatemessages td {
+	border: 0px !important;
+}
+
+#privatemessages table, td, tr {
+	border-spacing: 0px;
+}
+
+#privatemessages td.checkbox-column {
+	height: 58px;
+	padding: 0;
+}
+#privatemessages td.message-username {
+	padding: 0;
+}
+#privatemessages td.message-username {
+	
+}
+
+#privatemessages tr.message-unread {
+	font-weight: bold;
+}
+#privatemessages .message-username span {
+	
+}
+
+#colorpicker {
+	width: 195px;
+	height: 195px;
+	margin: 0px auto;
+}
+#PrivateMessageTagsAddForm label {
+	display: block;
+	width:50px;
+	font-weight: bold;
+	float: left;
+	margin-top: 5px;
+}
+#PrivateMessageTagsAddForm input {
+}
