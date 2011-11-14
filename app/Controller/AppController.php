@@ -44,7 +44,7 @@ class AppController extends Controller {
 		/**
 		 * Authentication component configurations
 		 */
-// 		$this->Auth->authenticate = ClassRegistry::init('User');
+ 		//$this->Auth->authenticate = ClassRegistry::init('User');
 		$this->Auth->authenticate = array('Form');
 		$this->Auth->loginAction = array('controller' => 'users', 'action' => 'login');
 		$this->Auth->loginRedirect = '/';

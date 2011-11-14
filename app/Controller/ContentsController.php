@@ -5,11 +5,17 @@ App::uses('AppController', 'Controller');
  *
  */
 class ContentsController extends AppController {
-	public $components = array('Cookie', 'CookieValidation');
+	public $components = array('Cookie', 'CookieValidation', 'Content_', 'DataHandler', 'Tag_', 'Company_');
 	public $validContentTypes = array('challenge','idea','vision');	
-// 	public $uses = array('Contents','Language','LinkedContent','Tags', 'RelatedCompanies','Baseclasses');
+	public $uses = array('Language', 'Content');
 	
-	
+	/**
+	* Browse action - method
+	* Generates browse menu for contents
+	*
+	*
+	* @author	Manu Bamba
+	*/
 	public function browse($contentType = 'all') {		
 		if($contentType = $this->validateContentType($contentType)) {
 			$contents = $this->Content->find('all',	
@@ -56,68 +62,29 @@ class ContentsController extends AppController {
 	* Routes that direct to this action are:
 	* Router::connect('/contents/add/*', array('controller' => 'contents', 'action' => 'add'));
 	*
-	* @author	Jari Korpela
+	* @author	Manu Bamba
 	* @param	enum $content_type Accepted values: 'all', 'challenge', 'idea', 'vision'
 	* @param	int	$related To what content this content will be linked to
+	* @todo		Publishing
 	*/
 	public function add($contentType = 'challenge', $related = 0) {
 	
 		if(isset($this->userId)) {
-				
-			if(!$contentType = $this->Content_->validateContentType($contentType)) {
-				//We validate the contentType received from url to prevent XSS.
-				$this->redirect('/');
-			}
-	
-			if (!empty($this->data)) {
-				// If form has been posted
-				$this->data['Node']['type'] = 'Content'; //Set Node type
-				$this->data['Privileges']['creator'] = $this->userId; // Set creator to the logged in user
-	
-				if($this->data['Node']['published'] == 1) {
-					$this->data['Privileges']['privileges'] = '755'; // Set basic privileges
-				} else {
-					$this->data['Privileges']['privileges'] = '700'; // Set privileges so that other users cant read it
-				}
-	
-				if(in_array($contentType,$this->validContentTypes)) {
-					$this->data['Node']['class'] = $contentType;
-				}
-	
+			if (!empty($this->data)) {// If form has been posted
 				$this->Content_->setAllContentDataForSave($this->data);
-				$this->Tag_->setTagsForSave($this->data['Tags']['tags'],$this->data['Privileges']);
-				$this->Company_->setCompaniesForSave($this->data['Companies']['companies'],$this->data['Privileges']);
-	
-	
-				if($this->Content_->saveContent() !== false) {
-					//If saving the content was successfull then...
-					//TODO: This area is missing a method to link the $related content to this content. Should be done when the link method is ready.
-						
-					$this->Tag_->linkTagsToObject($this->Content_->getContentId()); //We have content ID after content has been saved
-					$this->Company_->linkCompaniesToObject($this->Content_->getContentId());
-	
-					$this->Session->setFlash('Your content has been successfully saved.', 'flash'.DS.'successfull_operation');
-	
-					if($this->Content_->getContentPublishedStatus() === "1") {
-						$this->redirect(array('controller' => 'contents', 'action' => 'view', $this->Content_->getContentId()));
-					} else {
-						$this->redirect(array('controller' => 'contents', 'action' => 'edit', $this->Content_->getContentId()));
-					}
-				} else {
-					$this->Session->setFlash('Your content has NOT been successfully saved.');
-				}
+// 				$this->Tag_->setTagsForSave($this->data['Tags']['tags'],$this->data['Privileges']);
+// 				$this->Company_->setCompaniesForSave($this->data['Companies']['companies'],$this->data['Privileges']);
 			}
 				
-			//$this->helpers[] = 'TinyMce.TinyMce'; //Commented out for future use...
-				
-	
+			$this->set('content_type', $contentType);
 			$this->set('language_list',$this->Language->find('list',array('order' => array('Language.name' => 'ASC'))));
-			$this->set('content_type',$contentType);
-	
 		} else {
-			$this->redirect('/');
+			$this->redirect(array(
+					'controller' => 'Users',
+					'action' => 'login'
+				)
+			);
 		}
-	
 	}
 	
 	/**

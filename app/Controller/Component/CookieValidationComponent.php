@@ -24,7 +24,7 @@
  *  @license    GPL v2
  *  @version    1.0
  */ 
-class CookieValidationComponent extends object {
+class CookieValidationComponent extends Component {
 	
 	public $components = array('Cookie');
 	protected $chosenGroups = array();

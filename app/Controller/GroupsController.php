@@ -39,7 +39,7 @@ class GroupsController extends AppController {
 			array(
 					'limit' => 10,
 					'order' => 'Group.created DESC',
-					'fields' => array('Group.name', 'Group.lead')
+					'fields' => array('name', 'lead')
 				)
 		);
 		$campaignCount = null;
@@ -57,7 +57,6 @@ class GroupsController extends AppController {
 	function view($groupId) {
 // 		debug($this->Session);
 		$userRole = $this->getUserRole($groupId);
-		debug($userRole);
 		$group = $this->Group->find('first', array(
 					'conditions' => array(
 						'Group.id' => $groupId
@@ -79,18 +78,7 @@ class GroupsController extends AppController {
 								'id',
 								'name'
 							)
-						),
-						'GroupsUser' => array(
-							'limit' => 2,
-							'conditions' => array(
-								'UserRole.name' => 'Admin'
-							),
-							'fields' => array(
-								'id',
-								'username'
-							),
-							'recursive' => 1
-						)						
+						),			
 					),
 					'fields' => array(
 						'id',
@@ -100,7 +88,6 @@ class GroupsController extends AppController {
 					),
 					'recursive' => 2					
 		));		
-		debug($group); die;
 		
 		$campaign_count = $this->Group->find('first', array(
 			'contain' => array(
@@ -135,14 +122,18 @@ class GroupsController extends AppController {
 		$administrators = $this->Group->GroupsUser->find('all', array(
 			'fields' => array(
 				'User.username',
-				'User.id'
+				'User.id',
+				'user_role_id',
+				'UserRole.name'
 			),
 			'conditions' => array(
-				'UserRole.name' => 'Member'
+				'UserRole.name' => 'Admin',
+				'Group.id' => $groupId
 			),
 			'limit' => 2,
 			'recursive' => 1
 		));
+// 		debug($administrators);
 		$admin_count = $this->Group->GroupsUser->find('count', array(
 			'conditions' => array(
 				'UserRole.name' => 'Admin',
@@ -157,40 +148,8 @@ class GroupsController extends AppController {
 		$this->set(compact('recent_linked_groups'));
 		$this->set(compact('linked_group_count'));
 		$this->set(compact('userRole'));
-		
-	}
-	
-	function linkedGroups($groupId) {
-		$this->set('content_sidebar', 'left');
-		$this->set('groupId', $groupId);
-		$this->set('group', $group);
-	}
-	function campaigns($groupId) {
-		$now = new DateTime();
-		$active_campaigns = null;
-		$forthcoming_campaigns = null;
-		$ended_campaigns = null;
-		if(!empty($group['Campaign'])) {
-			foreach($group['Campaign'] as $campaign) {
-				if($campaign['start_time'] < $now && $campaign['end_time'] > $now) {
-					$active_campaigns[] = $campaign;
-				}
-				if($campaign['end_time'] < $now) {
-					$ended_campaigns[] = $campaign;
-				}
-				if($campaign['start_time'] > $now) {
-					$forthcoming_campaigns[] = $campaign;
-				}
-			}
-		}
-		$this->set('active_campaigns', $active_campaigns);
-		$this->set('ended_campaigns', $ended_campaigns);
-		$this->set('forthcoming_campaigns', $forthcoming_campaigns);
-		$this->set('content_sidebar', 'left');
-		$this->set('group', $group);
-		$this->set(compact('userIsAdmin'));
-	}
-	
+	}	
+
 	function getCampaignList($groupId) {		
 		$this->autoRender = false;
 		$this->autoLayout = false;
@@ -216,28 +175,46 @@ class GroupsController extends AppController {
 		));
 		echo json_encode($campaigns);
 	}
+	
 	function getMemberList($groupId) {
 		$this->autoRender = false;
 		$this->autoLayout = false;
-		$campaigns = $this->Group->find('first', array(
-								'conditions' => array(
-									'Group.id' => $groupId
-								),
-								'contain' => array(
-									'GroupsUser.User' => array(
-										'fields' => array(
-											'id',
-											'username'
-										),
-									)
-								),
-								'fields' => array(
-									'id'
-								),
-								'recursive' => 2					
+		$members = $this->Group->GroupsUser->find('all', array(
+			'fields' => array(
+				'User.username',
+				'User.id',
+				'user_role_id',
+				'UserRole.name'
+			),
+			'conditions' => array(
+// 				'UserRole.name' => 'Admin',
+				'Group.id' => $groupId
+			),
+			'recursive' => 1
 		));
-		echo json_encode($campaigns);
+		echo json_encode($members);
 	}
+
+	
+	function getAdminList($groupId) {
+		$this->autoRender = false;
+		$this->autoLayout = false;
+		$members = $this->Group->GroupsUser->find('all', array(
+			'fields' => array(
+				'User.username',
+				'User.id',
+				'user_role_id',
+				'UserRole.name'
+			),
+			'conditions' => array(
+				'UserRole.name' => 'Admin',
+				'Group.id' => $groupId
+			),
+			'recursive' => 1
+		));
+		echo json_encode($members);
+	}
+	
 	function getUserRole($groupId, $userId = null) {
 		$userId = $userId == null ? $this->userId : $userId;
 		$userIsAdmin = $this->Group->GroupsUser->find('first', array(

@@ -28,8 +28,8 @@ echo date_format($date_created, 'j F, Y');
 	<?php foreach($administrators as $admin):?>
 		<li>
 		<?php 	echo $this->Html->link($admin['User']['username'], array(
-	                'controller' => 'User',
-	                'action' => 'view',  $admin['User']['id']  
+	                'controller' => 'Users',
+	                'action' => 'view',  $admin['User']['username']  
 		));
 		?>
 		</li>		 

@@ -24,7 +24,7 @@
  *  @license    GPL v2
  *  @version    1.0
  */ 
-class Content_Component extends object { //The _ is added because we cant use word Content because its reserved for controller
+class Content_Component extends Component { //The _ is added because we cant use word Content because its reserved for controller
 	var $components = array('DataHandler');
 	
 	private $__type = 'Content';
@@ -34,7 +34,6 @@ class Content_Component extends object { //The _ is added because we cant use wo
 	protected $_contentTags = array();
 	protected $_contentCompanies = array();
 	
-	protected $_privileges = array();
 	protected $_savedData = array();
 	protected $_contentId = null;
 		
@@ -139,16 +138,11 @@ class Content_Component extends object { //The _ is added because we cant use wo
 	
 	
 	public function setAllContentDataForSave($data) {
-		$this->setContentDataForSave($data['Node']);
+		$this->setContentDataForSave($data['Content']);
 		$this->setContentSpecificDataForSave($data['Specific']);
-		$this->setContentPrivileges($data['Privileges']);
 		return $this;
 	}
-	
-	public function setContentPrivileges($data) {
-		$this->_privileges = $data;
-		return $this;
-	}
+
 	
 	public function setContentSpecificDataForSave($data) {
 		$contentSpecificData = $this->DataHandler->addHtmlSpecialCharsToArrayValues($data);

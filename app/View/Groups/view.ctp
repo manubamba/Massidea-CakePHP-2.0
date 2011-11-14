@@ -7,9 +7,6 @@ echo $this->Html->css(array(
 	'..'.DS.'js'.DS.'datatables'.DS.'tabletools'.DS.'css'.DS.'TableTools_JUI',
 	'datatables'.DS.'datatables'
 		),'stylesheet', array('inline' => false ) );
-echo $this->element('groups'.DS.'linked_groups', array('cache' => false)); 
-echo $this->element('groups'.DS.'campaigns', array('cache' => false)); 
-echo $this->element('groups'.DS.'members', array('cache' => false)); 
 ?>
 <div id="group-page">
 	<div id="group-header">
@@ -110,3 +107,9 @@ echo $this->element('groups'.DS.'members', array('cache' => false));
 
 </div>
 <div class="clear"></div>
+<?php 
+echo $this->element('groups'.DS.'linked_groups', array('cache' => false));
+echo $this->element('groups'.DS.'campaigns', array('cache' => false));
+echo $this->element('groups'.DS.'members', array('cache' => false));
+echo $this->element('groups'.DS.'admins', array('cache' => false));
+?>
