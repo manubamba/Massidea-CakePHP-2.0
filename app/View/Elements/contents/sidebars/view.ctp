@@ -91,7 +91,7 @@ $expandIcons = array('block' => 'icon_minus_tiny.png',
 	<ul style="display: <?php echo $cookies['linked']; ?>">
 	
 	<?php if(!empty($linkedContents) && $linkedContentsCount > 0): foreach($linkedContents as $content): ?>
-		<li class="border-<?php echo $content['Node']['class']; ?> small-margin-top-bottom">
+		<li class="border-<?php echo $content['class']; ?> small-margin-top-bottom">
 			<a href="#" class="bold"><?php echo (empty($content['User']['username'])) ? 'Anonymous' : $content['User']['username']; ?>: </a>
 			
 			<?php echo ($isOwner) ? $this->Html->image('icon_red_cross.png',array('class' => 'size16 right pointerCursor', 'id' => "delete_linked_content-".$content['id'])) : null; ?>
