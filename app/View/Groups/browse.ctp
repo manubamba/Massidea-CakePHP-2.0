@@ -1,5 +1,12 @@
 <h2>
 	<?php echo __('Groups'); ?>
+	<span class="right">
+		<?php echo $this->Html->link( __('> Create new group'), array(
+                'controller' => 'Groups',
+                'action' => 'add'
+			));
+			?>	
+	</span>
 </h2>
 
 <?php foreach($groups as $group): ?>

@@ -1,4 +1,4 @@
- <div id="admins_dialog">
+ <div id="admins_dialog" class="hidden">
  <input type="hidden" id="group_id" value=<?php echo $group['Group']['id'];?>>
  <table id="admin_table" width="100%" class="fixed-table display">
 	<thead>

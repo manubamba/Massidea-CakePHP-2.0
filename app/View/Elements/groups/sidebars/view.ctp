@@ -46,13 +46,7 @@ echo date_format($date_created, 'j F, Y');
 		));
 		?>
 		</li>
-		<li id="info_link">
-		<?php echo $this->Html->link( __('Info'), array(
-	                'controller' => 'Groups',
-	                'action' => 'info', $group['Group']['id']
-		));
-		?>
-		</li><li id="members_link">
+		<li id="members_link">
 		<?php echo $this->Html->link( __('Members'), array(
 	                'controller' => 'Groups',
 	                'action' => 'members', $group['Group']['id']

@@ -5188,3 +5188,507 @@
 #1 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
 #2 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2011-11-14 16:35:41 Error: [MissingControllerException] Controller class ~aliController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 17:41:20 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 17:42:17 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 17:42:49 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 17:43:16 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 17:47:48 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 17:47:52 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 17:48:52 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 17:49:26 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 17:53:00 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 18:14:11 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 18:15:02 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 18:15:07 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 18:15:24 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 18:15:33 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 18:16:19 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 18:16:48 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 18:17:17 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 18:17:47 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 18:18:08 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 18:19:27 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 18:19:28 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 18:19:29 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 18:19:30 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 18:20:22 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 18:20:27 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 18:20:31 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 18:20:52 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 18:25:54 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 18:25:58 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-14 18:35:39 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 11:34:21 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 11:34:51 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 11:37:34 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 11:37:38 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 11:38:36 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 11:38:45 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 11:40:21 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 11:40:50 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 11:42:37 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 11:53:09 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 11:54:03 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 11:56:23 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 11:58:54 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 11:59:08 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 11:59:54 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 12:04:39 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 12:05:06 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 12:05:52 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 12:13:15 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 12:13:30 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 13:25:15 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 14:12:16 Error: [MissingActionException] Action GroupsController::edit() could not be found.
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-15 14:14:29 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 14:37:05 Error: [MissingViewException] View file "/home/manu/public_html/manuMassidea2/app/View/Groups/edit.ctp" is missing.
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Controller/Controller.php(898): View->render(NULL, NULL)
+#2 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(114): Controller->render()
+#3 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-11-15 14:37:15 Error: [MissingViewException] View file "/home/manu/public_html/manuMassidea2/app/View/Groups/edit.ctp" is missing.
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Controller/Controller.php(898): View->render(NULL, NULL)
+#2 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(114): Controller->render()
+#3 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-11-15 14:41:41 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 14:41:59 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 14:42:23 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 14:44:08 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 14:47:38 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 14:50:13 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 14:53:49 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 14:53:58 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 14:54:26 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 14:54:55 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 14:55:07 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 14:55:18 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 14:55:36 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 14:56:18 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 14:59:33 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 15:01:36 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 15:02:40 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 15:03:00 Error: [MissingActionException] Action GroupsController::dd() could not be found.
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-15 15:03:04 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 15:03:32 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 15:05:23 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 15:05:27 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 15:05:56 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 15:07:15 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 15:07:18 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 15:16:58 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 15:17:45 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 15:18:19 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 15:18:24 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 15:19:31 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 15:19:37 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 15:33:33 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 15:44:14 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 15:53:54 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 15:56:43 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 15:58:15 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 15:59:05 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 15:59:12 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 15:59:39 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 16:01:09 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 16:01:16 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 16:01:35 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 16:02:00 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 16:02:13 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 16:02:51 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 16:03:44 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 16:08:49 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 16:09:12 Error: [MissingActionException] Action GroupsController::info() could not be found.
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-15 16:09:57 Error: [MissingActionException] Action GroupsController::info() could not be found.
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-15 16:18:21 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 16:20:47 Error: [MissingActionException] Action GroupsController::delete() could not be found.
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-15 16:22:19 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`massidea2`.`groups_users`, CONSTRAINT `fk_groups_users_groups1` FOREIGN KEY (`group_id`) REFERENCES `groups` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('DELETE `Group` ...', Array)
+#2 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Datasource/Database/Mysql.php(416): DboSource->execute('DELETE `Group` ...')
+#3 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Model.php(2221): Mysql->delete(Object(Group), Array)
+#4 /home/manu/public_html/manuMassidea2/app/Controller/GroupsController.php(207): Model->delete('106')
+#5 [internal function]: GroupsController->delete('106')
+#6 /home/manu/public_html/manuMassidea2/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(GroupsController), Array)
+#7 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#8 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#9 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2011-11-15 16:41:16 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`massidea2`.`groups_users`, CONSTRAINT `fk_groups_users_groups1` FOREIGN KEY (`group_id`) REFERENCES `groups` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('DELETE `Group` ...', Array)
+#2 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Datasource/Database/Mysql.php(416): DboSource->execute('DELETE `Group` ...')
+#3 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Model.php(2221): Mysql->delete(Object(Group), Array)
+#4 /home/manu/public_html/manuMassidea2/app/Controller/GroupsController.php(207): Model->delete('106')
+#5 [internal function]: GroupsController->delete('106')
+#6 /home/manu/public_html/manuMassidea2/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(GroupsController), Array)
+#7 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#8 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#9 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2011-11-15 16:42:15 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`massidea2`.`groups_users`, CONSTRAINT `fk_groups_users_groups1` FOREIGN KEY (`group_id`) REFERENCES `groups` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('DELETE `Group` ...', Array)
+#2 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Datasource/Database/Mysql.php(416): DboSource->execute('DELETE `Group` ...')
+#3 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Model.php(2221): Mysql->delete(Object(Group), Array)
+#4 /home/manu/public_html/manuMassidea2/app/Controller/GroupsController.php(209): Model->delete('106')
+#5 [internal function]: GroupsController->delete('106')
+#6 /home/manu/public_html/manuMassidea2/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(GroupsController), Array)
+#7 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#8 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#9 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2011-11-15 16:43:15 Error: [MissingViewException] View file "/home/manu/public_html/manuMassidea2/app/View/Groups/delete.ctp" is missing.
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Controller/Controller.php(898): View->render(NULL, NULL)
+#2 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(114): Controller->render()
+#3 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-11-15 16:44:50 Error: [MissingViewException] View file "/home/manu/public_html/manuMassidea2/app/View/Groups/delete.ctp" is missing.
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Controller/Controller.php(898): View->render(NULL, NULL)
+#2 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(114): Controller->render()
+#3 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-11-15 16:44:53 Error: [MissingViewException] View file "/home/manu/public_html/manuMassidea2/app/View/Groups/delete.ctp" is missing.
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Controller/Controller.php(898): View->render(NULL, NULL)
+#2 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(114): Controller->render()
+#3 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-11-15 16:45:36 Error: [MissingViewException] View file "/home/manu/public_html/manuMassidea2/app/View/Groups/delete.ctp" is missing.
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Controller/Controller.php(898): View->render(NULL, NULL)
+#2 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(114): Controller->render()
+#3 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-11-15 16:46:20 Error: [MissingViewException] View file "/home/manu/public_html/manuMassidea2/app/View/Groups/delete.ctp" is missing.
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Controller/Controller.php(898): View->render(NULL, NULL)
+#2 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(114): Controller->render()
+#3 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-11-15 16:46:24 Error: [MissingViewException] View file "/home/manu/public_html/manuMassidea2/app/View/Groups/delete.ctp" is missing.
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Controller/Controller.php(898): View->render(NULL, NULL)
+#2 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(114): Controller->render()
+#3 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-11-15 16:46:43 Error: [MissingViewException] View file "/home/manu/public_html/manuMassidea2/app/View/Groups/delete.ctp" is missing.
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Controller/Controller.php(898): View->render(NULL, NULL)
+#2 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(114): Controller->render()
+#3 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-11-15 16:47:59 Error: [MissingActionException] Action GroupsController::join() could not be found.
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-15 16:49:49 Error: [MissingActionException] Action GroupsController::join() could not be found.
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-16 10:52:29 Error: [MissingActionException] Action GroupsController::join() could not be found.
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-16 10:53:29 Error: [MissingActionException] Action GroupsController::join() could not be found.
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-16 12:47:19 Error: [MissingActionException] Action GroupsController::index() could not be found.
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-16 12:48:12 Error: [MissingActionException] Action GroupsController::index() could not be found.
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-16 12:48:16 Error: [MissingActionException] Action GroupsController::index() could not be found.
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-16 13:08:22 Error: [MissingActionException] Action GroupsController::index() could not be found.
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-16 13:31:50 Error: [MissingViewException] View file "/home/manu/public_html/manuMassidea2/app/View/Groups/join.ctp" is missing.
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Controller/Controller.php(898): View->render(NULL, NULL)
+#2 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(114): Controller->render()
+#3 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-11-16 13:36:42 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-16 13:37:42 Error: [MissingActionException] Action GroupsController::73() could not be found.
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-16 13:38:47 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GroupsUsersaveAll' at line 1
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('GroupsUsersaveA...', Array)
+#2 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Datasource/DboSource.php(645): DboSource->execute('GroupsUsersaveA...', Array, Array)
+#3 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Datasource/DboSource.php(587): DboSource->fetchAll('GroupsUsersaveA...', Array, Array)
+#4 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Model.php(720): DboSource->query('GroupsUsersaveA...', Array, Object(Group))
+#5 [internal function]: Model->__call('GroupsUsersaveA...', Array)
+#6 /home/manu/public_html/manuMassidea2/app/Controller/GroupsController.php(232): Group->GroupsUsersaveAll(Array)
+#7 [internal function]: GroupsController->join('73')
+#8 /home/manu/public_html/manuMassidea2/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(GroupsController), Array)
+#9 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#10 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#11 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2011-11-16 13:57:57 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-16 15:49:30 Error: [MissingActionException] Action GroupsController::1() could not be found.
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-16 16:00:39 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /home/manu/public_html/manuMassidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

@@ -45,7 +45,6 @@ class CustomAuthComponent extends AuthComponent {
 			'fields' => array('User.id')
 		));		
 		$userId = current($userId);	
-		debug($userId);
 		if($this->User->isOldUser($data['User']['username'])) {		
 			$plainPassword = $data['User']['password'];
 			$salt = $this->User->getUserSalt($data['User']['username']);
@@ -57,7 +56,6 @@ class CustomAuthComponent extends AuthComponent {
 // 		} else {
 // 			$data['User']['password'] = $this->customHashPassword($data['User']['password']);
 // 		}
-			debug($this->response);		
 		if($success = $this->identify($this->request, $this->response)) {
 			
 			

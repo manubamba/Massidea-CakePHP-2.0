@@ -84,6 +84,7 @@ class GroupsController extends AppController {
 						'id',
 						'name',
 						'lead',
+						'body',
 						'created'
 					),
 					'recursive' => 2					
@@ -125,23 +126,23 @@ class GroupsController extends AppController {
 				'User.id',
 				'user_role_id',
 				'UserRole.name'
-			),
+		),
 			'conditions' => array(
 				'UserRole.name' => 'Admin',
 				'Group.id' => $groupId
-			),
+		),
 			'limit' => 2,
 			'recursive' => 1
 		));
-// 		debug($administrators);
+		// 		debug($administrators);
 		$admin_count = $this->Group->GroupsUser->find('count', array(
 			'conditions' => array(
 				'UserRole.name' => 'Admin',
 				'Group.id' => $groupId
-			)
+		)
 		));
 		$this->set('content_sidebar', 'left');
-		$this->set('group', $group);
+		$this->set('group', $group);		
 		$this->set('administrators', $administrators);
 		$this->set('admin_count', $admin_count);
 		$this->set('campaign_count', $campaign_count);
@@ -149,6 +150,109 @@ class GroupsController extends AppController {
 		$this->set(compact('linked_group_count'));
 		$this->set(compact('userRole'));
 	}	
+	
+	function add() {
+		if($this->userId) {
+			if(!empty($this->data)) {
+				if ($this->request->is('post')) {
+					$this->request->data['GroupsUser'] = array(
+					array(
+										'user_id' => $this->userId,
+										'user_role_id' => 2,
+										'favourite' => 0					
+					)
+					);
+					if($this->Group->saveAll($this->data)) {
+						$groupId = $this->Group->id;
+						$this->Session->setFlash('The group has been successfully added');
+						$this->redirect(array(
+															'controller' => 'Groups',
+															'action' => 'view', $groupId
+						));
+					}			
+					
+				} else {
+					$this->redirect('/');
+				}
+			}
+		} else {
+			$this->redirect(array(
+				'controller' => 'Users',
+				'action' => 'login'
+			));
+		} 			 
+	} 
+		
+	function edit($groupId) {
+			if($this->getUserRole($groupId) == 'Admin') {
+				if($this->request->data) {
+					if($this->Group->save($this->request->data)) {
+						$this->redirect(array(
+						'controller' => 'Groups',
+						'action' => 'view', $groupId
+						));
+					}
+				} else {
+					$this->Group->id = $groupId;
+					$this->data = $this->Group->read();
+				}
+			} else {
+				$this->redirect('/');
+			}
+	}
+	
+	function delete($groupId) {
+		if($this->getUserRole($groupId) == 'Admin') {
+			$this->Group->id = $groupId;
+			$this->Group->GroupsUser->deleteAll(array(
+				'group_id' => $groupId
+			));
+			if($this->Group->delete($groupId)) {
+				$this->Session->setFlash('Group successfully Deleted');
+				$this->redirect('/Groups/browse'); 
+			} else {				
+				$this->Session->setFlash('Group not Deleted');
+				$this->redirect(array(
+					'controller' => 'Groups',
+					'action' => 'view', $groupId
+				));
+			}
+			
+		}
+	}
+	
+function join($groupId) {
+		if(!$this->getUserRole($groupId)) {				
+			$this->request->data['GroupsUser'] = array(
+					'group_id' => $groupId,
+					'user_id' => $this->userId,
+					'user_role_id' => 1,
+					'favourite' => 0	
+			);
+// 			debug($this->data); 
+			$this->Group->GroupsUser->save($this->data);					
+		} else {
+			$this->Session->setFlash('You are already a member!');
+		}
+		$this->redirect(array(
+						'controller' => 'Groups',
+						'action' => 'view', $groupId
+		));
+	}
+	function unjoin($groupId) {
+		if($this->getUserRole($groupId)) {			
+			$this->Group->GroupsUser->deleteAll(array(
+				'group_id' => $groupId,
+				'user_id' => $this->userId
+			));
+		} else {
+			$this->Session->setFlash('You are not a member!');
+		}
+		$this->redirect(array(
+							'controller' => 'Groups',
+							'action' => 'view', $groupId
+		));
+	}
 
 	function getCampaignList($groupId) {		
 		$this->autoRender = false;
