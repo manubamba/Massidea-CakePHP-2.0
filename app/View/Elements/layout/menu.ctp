@@ -7,6 +7,7 @@ $url_view_challenge = $this->Html->url(array('controller' => 'contents', 'action
 $url_view_idea = $this->Html->url(array('controller' => 'contents', 'action' => 'idea'));
 $url_view_vision = $this->Html->url(array('controller' => 'contents', 'action' => 'vision'));
 $url_view_groups = $this->Html->url(array('controller' => 'Groups', 'action' => 'browse'));
+$url_view_champaigns = $this->Html->url(array('controller' => 'campaigns', 'action' => 'browse'));
 ?>
 
 <div class="left">
@@ -17,7 +18,7 @@ $url_view_groups = $this->Html->url(array('controller' => 'Groups', 'action' => 
 		<li id="visions" class="yellow"><a href="<?php echo $url_view_vision; ?>">Visions</a></li>
 		<li id="users" class="blue"><a href="#">Users</a></li>
 		<li id="groups" class="blue"><a href="<?php echo $url_view_groups; ?>">Groups</a></li>
-		<li id="campaigns" class="deepblue"><a href="#">Campaigns</a></li>
+		<li id="campaigns" class="deepblue"><a href="<?php echo $url_view_champaigns; ?>">Campaigns</a></li>
 		<li id="blog" class="deepblue"><a href="<?php echo $this->Html->url('/blog'); ?>">Blog</a></li>
 	</ul>
 </div>

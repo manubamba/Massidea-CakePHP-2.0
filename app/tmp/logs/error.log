@@ -4773,3 +4773,296 @@
 2011-11-09 15:25:06 Error: [MissingControllerException] Controller class ~onurController could not be found.
 #0 /home/manu/public_html/massidea2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2011-11-10 15:53:04 Error: [MissingComponentException] Component class CookievalidationComponent could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Controller/ComponentCollection.php(45): ComponentCollection->load('Cookievalidatio...', Array)
+#1 /home/onur/public_html/massidea/lib/Cake/Controller/Controller.php(585): ComponentCollection->init(Object(CampaignsController))
+#2 /home/onur/public_html/massidea/app/Controller/AppController.php(37): Controller->constructClasses()
+#3 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(103): AppController->constructClasses()
+#4 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#5 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2011-11-10 15:55:14 Error: [MissingComponentException] Component class CookievalidationComponent could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Controller/ComponentCollection.php(45): ComponentCollection->load('Cookievalidatio...', Array)
+#1 /home/onur/public_html/massidea/lib/Cake/Controller/Controller.php(585): ComponentCollection->init(Object(CampaignsController))
+#2 /home/onur/public_html/massidea/app/Controller/AppController.php(37): Controller->constructClasses()
+#3 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(103): AppController->constructClasses()
+#4 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#5 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2011-11-10 16:07:08 Error: [MissingViewException] View file "/home/onur/public_html/massidea/app/View/Campaigns/browse.ctp" is missing.
+#0 /home/onur/public_html/massidea/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /home/onur/public_html/massidea/lib/Cake/Controller/Controller.php(898): View->render(NULL, NULL)
+#2 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(114): Controller->render()
+#3 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-11-11 13:13:10 Error: [MissingControllerException] Controller class BlogController could not be found.
+#0 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-11 14:53:10 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND (`end_time` > ))   ORDER BY `Campaign`.`created` DESC  LIMIT 10' at line 1
+#0 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Campaig...', Array)
+#2 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(645): DboSource->execute('SELECT `Campaig...', Array, Array)
+#3 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(1040): DboSource->fetchAll('SELECT `Campaig...', false)
+#4 /home/onur/public_html/massidea/lib/Cake/Model/Model.php(2458): DboSource->read(Object(Campaign), Array)
+#5 /home/onur/public_html/massidea/app/Controller/CampaignsController.php(24): Model->find('all', Array)
+#6 [internal function]: CampaignsController->browse()
+#7 /home/onur/public_html/massidea/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#8 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#9 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#10 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2011-11-11 14:53:15 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND (`end_time` > ))   ORDER BY `Campaign`.`created` DESC  LIMIT 10' at line 1
+#0 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Campaig...', Array)
+#2 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(645): DboSource->execute('SELECT `Campaig...', Array, Array)
+#3 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(1040): DboSource->fetchAll('SELECT `Campaig...', false)
+#4 /home/onur/public_html/massidea/lib/Cake/Model/Model.php(2458): DboSource->read(Object(Campaign), Array)
+#5 /home/onur/public_html/massidea/app/Controller/CampaignsController.php(24): Model->find('all', Array)
+#6 [internal function]: CampaignsController->browse()
+#7 /home/onur/public_html/massidea/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#8 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#9 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#10 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2011-11-11 14:54:17 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND (`end_time` > ))   ORDER BY `Campaign`.`created` DESC  LIMIT 10' at line 1
+#0 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Campaig...', Array)
+#2 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(645): DboSource->execute('SELECT `Campaig...', Array, Array)
+#3 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(1040): DboSource->fetchAll('SELECT `Campaig...', false)
+#4 /home/onur/public_html/massidea/lib/Cake/Model/Model.php(2458): DboSource->read(Object(Campaign), Array)
+#5 /home/onur/public_html/massidea/app/Controller/CampaignsController.php(24): Model->find('all', Array)
+#6 [internal function]: CampaignsController->browse()
+#7 /home/onur/public_html/massidea/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#8 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#9 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#10 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2011-11-11 14:59:15 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND (`end_time` > ))   ORDER BY `Campaign`.`created` DESC  LIMIT 10' at line 1
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Campaig...', Array)
+#2 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Datasource/DboSource.php(645): DboSource->execute('SELECT `Campaig...', Array, Array)
+#3 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Datasource/DboSource.php(1040): DboSource->fetchAll('SELECT `Campaig...', false)
+#4 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Model.php(2458): DboSource->read(Object(Campaign), Array)
+#5 /home/onur/public_html/massidea/app/Controller/CampaignsController.php(23): Model->find('all', Array)
+#6 [internal function]: CampaignsController->browse()
+#7 /home/manu/public_html/manuMassidea2/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#8 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#9 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#10 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2011-11-11 14:59:18 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND (`end_time` > ))   ORDER BY `Campaign`.`created` DESC  LIMIT 10' at line 1
+#0 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Campaig...', Array)
+#2 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Datasource/DboSource.php(645): DboSource->execute('SELECT `Campaig...', Array, Array)
+#3 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Datasource/DboSource.php(1040): DboSource->fetchAll('SELECT `Campaig...', false)
+#4 /home/manu/public_html/manuMassidea2/lib/Cake/Model/Model.php(2458): DboSource->read(Object(Campaign), Array)
+#5 /home/onur/public_html/massidea/app/Controller/CampaignsController.php(23): Model->find('all', Array)
+#6 [internal function]: CampaignsController->browse()
+#7 /home/manu/public_html/manuMassidea2/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#8 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#9 /home/manu/public_html/manuMassidea2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#10 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2011-11-11 15:01:29 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND (`end_time` > ))   ORDER BY `Campaign`.`created` DESC  LIMIT 10' at line 1
+#0 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Campaig...', Array)
+#2 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(645): DboSource->execute('SELECT `Campaig...', Array, Array)
+#3 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(1040): DboSource->fetchAll('SELECT `Campaig...', false)
+#4 /home/onur/public_html/massidea/lib/Cake/Model/Model.php(2458): DboSource->read(Object(Campaign), Array)
+#5 /home/onur/public_html/massidea/app/Controller/CampaignsController.php(23): Model->find('all', Array)
+#6 [internal function]: CampaignsController->browse()
+#7 /home/onur/public_html/massidea/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#8 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#9 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#10 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2011-11-11 15:02:06 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND (`end_time` > ))   ORDER BY `Campaign`.`created` DESC  LIMIT 10' at line 1
+#0 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Campaig...', Array)
+#2 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(645): DboSource->execute('SELECT `Campaig...', Array, Array)
+#3 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(1040): DboSource->fetchAll('SELECT `Campaig...', false)
+#4 /home/onur/public_html/massidea/lib/Cake/Model/Model.php(2458): DboSource->read(Object(Campaign), Array)
+#5 /home/onur/public_html/massidea/app/Controller/CampaignsController.php(23): Model->find('all', Array)
+#6 [internal function]: CampaignsController->browse()
+#7 /home/onur/public_html/massidea/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#8 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#9 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#10 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2011-11-11 15:02:18 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND (`end_time` > ))   ORDER BY `Campaign`.`created` DESC  LIMIT 10' at line 1
+#0 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Campaig...', Array)
+#2 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(645): DboSource->execute('SELECT `Campaig...', Array, Array)
+#3 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(1040): DboSource->fetchAll('SELECT `Campaig...', false)
+#4 /home/onur/public_html/massidea/lib/Cake/Model/Model.php(2458): DboSource->read(Object(Campaign), Array)
+#5 /home/onur/public_html/massidea/app/Controller/CampaignsController.php(23): Model->find('all', Array)
+#6 [internal function]: CampaignsController->browse()
+#7 /home/onur/public_html/massidea/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(CampaignsController), Array)
+#8 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#9 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#10 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2011-11-11 15:17:18 Error: [MissingActionException] Action CampaignsController::forthcoming_campaigns() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-11 15:17:19 Error: [MissingActionException] Action CampaignsController::ended_campaigns() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-11 15:23:52 Error: [MissingActionException] Action CampaignsController::forthcoming_campaigns() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-11 15:23:53 Error: [MissingActionException] Action CampaignsController::ended_campaigns() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-11 15:23:55 Error: [MissingActionException] Action CampaignsController::forthcoming_campaigns() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-11 15:23:55 Error: [MissingActionException] Action CampaignsController::ended_campaigns() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-11 15:23:56 Error: [MissingActionException] Action CampaignsController::forthcoming_campaigns() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-11 15:24:04 Error: [MissingActionException] Action CampaignsController::forthcoming_campaigns() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-11 15:24:05 Error: [MissingActionException] Action CampaignsController::ended_campaigns() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-11 15:26:09 Error: [MissingActionException] Action CampaignsController::forthcoming_campaigns() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-11 15:26:11 Error: [MissingActionException] Action CampaignsController::ended_campaigns() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-11 15:26:14 Error: [MissingActionException] Action CampaignsController::forthcoming_campaigns() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-11 15:26:15 Error: [MissingActionException] Action CampaignsController::ended_campaigns() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-11 15:26:54 Error: [MissingActionException] Action CampaignsController::forthcoming_campaigns() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-11 15:26:56 Error: [MissingActionException] Action CampaignsController::ended_campaigns() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-11 15:26:57 Error: [MissingActionException] Action CampaignsController::forthcoming_campaigns() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-11 15:26:58 Error: [MissingActionException] Action CampaignsController::ended_campaigns() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-11 15:27:45 Error: [MissingActionException] Action CampaignsController::forthcoming_campaigns() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-11 15:30:34 Error: [MissingActionException] Action CampaignsController::forthcoming_campaigns() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-11 15:30:35 Error: [MissingActionException] Action CampaignsController::ended_campaigns() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-11 15:30:36 Error: [MissingActionException] Action CampaignsController::forthcoming_campaigns() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-11 15:30:38 Error: [MissingActionException] Action CampaignsController::ended_campaigns() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-11 15:30:38 Error: [MissingActionException] Action CampaignsController::forthcoming_campaigns() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-11 15:30:57 Error: [MissingActionException] Action CampaignsController::forthcoming_campaigns() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-11 16:21:38 Error: [MissingActionException] Action CampaignsController::view() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-11 16:45:46 Error: [MissingActionException] Action CampaignsController::view() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-16 11:27:05 Error: [MissingViewException] View file "/home/onur/public_html/massidea/app/View/Campaigns/get_recent_ended.ctp" is missing.
+#0 /home/onur/public_html/massidea/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /home/onur/public_html/massidea/lib/Cake/Controller/Controller.php(898): View->render(NULL, NULL)
+#2 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(114): Controller->render()
+#3 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-11-16 11:27:20 Error: [MissingViewException] View file "/home/onur/public_html/massidea/app/View/Campaigns/get_recent_ended.ctp" is missing.
+#0 /home/onur/public_html/massidea/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /home/onur/public_html/massidea/lib/Cake/Controller/Controller.php(898): View->render(NULL, NULL)
+#2 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(114): Controller->render()
+#3 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-11-16 14:42:35 Error: [MissingActionException] Action CampaignsController::view() could not be found.
+#0 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-16 16:00:00 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'GroupsUser.username' in 'field list'
+#0 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `GroupsU...', Array)
+#2 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(645): DboSource->execute('SELECT `GroupsU...', Array, Array)
+#3 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(1205): DboSource->fetchAll('SELECT `GroupsU...', false)
+#4 /home/onur/public_html/massidea/lib/Cake/Model/Datasource/DboSource.php(1065): DboSource->queryAssociation(Object(Group), Object(GroupsUser), 'hasMany', 'GroupsUser', Array, Array, true, Array, 1, Array)
+#5 /home/onur/public_html/massidea/lib/Cake/Model/Model.php(2458): DboSource->read(Object(Group), Array)
+#6 /home/onur/public_html/massidea/app/Controller/GroupsController.php(103): Model->find('first', Array)
+#7 [internal function]: GroupsController->view('73')
+#8 /home/onur/public_html/massidea/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(GroupsController), Array)
+#9 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#10 /home/onur/public_html/massidea/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#11 /home/onur/public_html/massidea/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}

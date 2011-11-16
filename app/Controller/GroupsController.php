@@ -42,6 +42,7 @@ class GroupsController extends AppController {
 					'fields' => array('Group.name', 'Group.lead')
 				)
 		);
+		//debug($recentGroups);
 		$campaignCount = null;
 		$memberCount = null;
 		
@@ -166,23 +167,7 @@ class GroupsController extends AppController {
 		$this->set('group', $group);
 	}
 	function campaigns($groupId) {
-		$now = new DateTime();
-		$active_campaigns = null;
-		$forthcoming_campaigns = null;
-		$ended_campaigns = null;
-		if(!empty($group['Campaign'])) {
-			foreach($group['Campaign'] as $campaign) {
-				if($campaign['start_time'] < $now && $campaign['end_time'] > $now) {
-					$active_campaigns[] = $campaign;
-				}
-				if($campaign['end_time'] < $now) {
-					$ended_campaigns[] = $campaign;
-				}
-				if($campaign['start_time'] > $now) {
-					$forthcoming_campaigns[] = $campaign;
-				}
-			}
-		}
+		
 		$this->set('active_campaigns', $active_campaigns);
 		$this->set('ended_campaigns', $ended_campaigns);
 		$this->set('forthcoming_campaigns', $forthcoming_campaigns);
