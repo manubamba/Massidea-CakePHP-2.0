@@ -39,7 +39,7 @@ class GroupsController extends AppController {
 			array(
 					'limit' => 10,
 					'order' => 'Group.created DESC',
-					'fields' => array('Group.name', 'Group.lead')
+					'fields' => array('name', 'lead')
 				)
 		);
 		$campaignCount = null;
@@ -57,7 +57,6 @@ class GroupsController extends AppController {
 	function view($groupId) {
 // 		debug($this->Session);
 		$userRole = $this->getUserRole($groupId);
-		debug($userRole);
 		$group = $this->Group->find('first', array(
 					'conditions' => array(
 						'Group.id' => $groupId
@@ -79,28 +78,17 @@ class GroupsController extends AppController {
 								'id',
 								'name'
 							)
-						),
-						'GroupsUser' => array(
-							'limit' => 2,
-							'conditions' => array(
-								'UserRole.name' => 'Admin'
-							),
-							'fields' => array(
-								'id',
-								'username'
-							),
-							'recursive' => 1
-						)						
+						),			
 					),
 					'fields' => array(
 						'id',
 						'name',
 						'lead',
+						'body',
 						'created'
 					),
 					'recursive' => 2					
 		));		
-		debug($group); die;
 		
 		$campaign_count = $this->Group->find('first', array(
 			'contain' => array(
@@ -135,62 +123,137 @@ class GroupsController extends AppController {
 		$administrators = $this->Group->GroupsUser->find('all', array(
 			'fields' => array(
 				'User.username',
-				'User.id'
-			),
+				'User.id',
+				'user_role_id',
+				'UserRole.name'
+		),
 			'conditions' => array(
-				'UserRole.name' => 'Member'
-			),
+				'UserRole.name' => 'Admin',
+				'Group.id' => $groupId
+		),
 			'limit' => 2,
 			'recursive' => 1
 		));
+		// 		debug($administrators);
 		$admin_count = $this->Group->GroupsUser->find('count', array(
 			'conditions' => array(
 				'UserRole.name' => 'Admin',
 				'Group.id' => $groupId
-			)
+		)
 		));
 		$this->set('content_sidebar', 'left');
-		$this->set('group', $group);
+		$this->set('group', $group);		
 		$this->set('administrators', $administrators);
 		$this->set('admin_count', $admin_count);
 		$this->set('campaign_count', $campaign_count);
 		$this->set(compact('recent_linked_groups'));
 		$this->set(compact('linked_group_count'));
 		$this->set(compact('userRole'));
-		
-	}
+	}	
 	
-	function linkedGroups($groupId) {
-		$this->set('content_sidebar', 'left');
-		$this->set('groupId', $groupId);
-		$this->set('group', $group);
-	}
-	function campaigns($groupId) {
-		$now = new DateTime();
-		$active_campaigns = null;
-		$forthcoming_campaigns = null;
-		$ended_campaigns = null;
-		if(!empty($group['Campaign'])) {
-			foreach($group['Campaign'] as $campaign) {
-				if($campaign['start_time'] < $now && $campaign['end_time'] > $now) {
-					$active_campaigns[] = $campaign;
-				}
-				if($campaign['end_time'] < $now) {
-					$ended_campaigns[] = $campaign;
-				}
-				if($campaign['start_time'] > $now) {
-					$forthcoming_campaigns[] = $campaign;
+	function add() {
+		if($this->userId) {
+			if(!empty($this->data)) {
+				if ($this->request->is('post')) {
+					$this->request->data['GroupsUser'] = array(
+					array(
+										'user_id' => $this->userId,
+										'user_role_id' => 2,
+										'favourite' => 0					
+					)
+					);
+					if($this->Group->saveAll($this->data)) {
+						$groupId = $this->Group->id;
+						$this->Session->setFlash('The group has been successfully added');
+						$this->redirect(array(
+															'controller' => 'Groups',
+															'action' => 'view', $groupId
+						));
+					}			
+					
+				} else {
+					$this->redirect('/');
 				}
 			}
-		}
-		$this->set('active_campaigns', $active_campaigns);
-		$this->set('ended_campaigns', $ended_campaigns);
-		$this->set('forthcoming_campaigns', $forthcoming_campaigns);
-		$this->set('content_sidebar', 'left');
-		$this->set('group', $group);
-		$this->set(compact('userIsAdmin'));
+		} else {
+			$this->redirect(array(
+				'controller' => 'Users',
+				'action' => 'login'
+			));
+		} 			 
+	} 
+		
+	function edit($groupId) {
+			if($this->getUserRole($groupId) == 'Admin') {
+				if($this->request->data) {
+					if($this->Group->save($this->request->data)) {
+						$this->redirect(array(
+						'controller' => 'Groups',
+						'action' => 'view', $groupId
+						));
+					}
+				} else {
+					$this->Group->id = $groupId;
+					$this->data = $this->Group->read();
+				}
+			} else {
+				$this->redirect('/');
+			}
 	}
 	
+	function delete($groupId) {
+		if($this->getUserRole($groupId) == 'Admin') {
+			$this->Group->id = $groupId;
+			$this->Group->GroupsUser->deleteAll(array(
+				'group_id' => $groupId
+			));
+			if($this->Group->delete($groupId)) {
+				$this->Session->setFlash('Group successfully Deleted');
+				$this->redirect('/Groups/browse'); 
+			} else {				
+				$this->Session->setFlash('Group not Deleted');
+				$this->redirect(array(
+					'controller' => 'Groups',
+					'action' => 'view', $groupId
+				));
+			}
+			
+		}
+	}
+	
+function join($groupId) {
+		if(!$this->getUserRole($groupId)) {				
+			$this->request->data['GroupsUser'] = array(
+					'group_id' => $groupId,
+					'user_id' => $this->userId,
+					'user_role_id' => 1,
+					'favourite' => 0	
+			);
+// 			debug($this->data); 
+			$this->Group->GroupsUser->save($this->data);					
+		} else {
+			$this->Session->setFlash('You are already a member!');
+		}
+		$this->redirect(array(
+						'controller' => 'Groups',
+						'action' => 'view', $groupId
+		));
+	}
+	function unjoin($groupId) {
+		if($this->getUserRole($groupId)) {			
+			$this->Group->GroupsUser->deleteAll(array(
+				'group_id' => $groupId,
+				'user_id' => $this->userId
+			));
+		} else {
+			$this->Session->setFlash('You are not a member!');
+		}
+		$this->redirect(array(
+							'controller' => 'Groups',
+							'action' => 'view', $groupId
+		));
+	}
+
 	function getCampaignList($groupId) {		
 		$this->autoRender = false;
 		$this->autoLayout = false;
@@ -216,28 +279,46 @@ class GroupsController extends AppController {
 		));
 		echo json_encode($campaigns);
 	}
+	
 	function getMemberList($groupId) {
 		$this->autoRender = false;
 		$this->autoLayout = false;
-		$campaigns = $this->Group->find('first', array(
-								'conditions' => array(
-									'Group.id' => $groupId
-								),
-								'contain' => array(
-									'GroupsUser.User' => array(
-										'fields' => array(
-											'id',
-											'username'
-										),
-									)
-								),
-								'fields' => array(
-									'id'
-								),
-								'recursive' => 2					
+		$members = $this->Group->GroupsUser->find('all', array(
+			'fields' => array(
+				'User.username',
+				'User.id',
+				'user_role_id',
+				'UserRole.name'
+			),
+			'conditions' => array(
+// 				'UserRole.name' => 'Admin',
+				'Group.id' => $groupId
+			),
+			'recursive' => 1
 		));
-		echo json_encode($campaigns);
+		echo json_encode($members);
 	}
+
+	
+	function getAdminList($groupId) {
+		$this->autoRender = false;
+		$this->autoLayout = false;
+		$members = $this->Group->GroupsUser->find('all', array(
+			'fields' => array(
+				'User.username',
+				'User.id',
+				'user_role_id',
+				'UserRole.name'
+			),
+			'conditions' => array(
+				'UserRole.name' => 'Admin',
+				'Group.id' => $groupId
+			),
+			'recursive' => 1
+		));
+		echo json_encode($members);
+	}
+	
 	function getUserRole($groupId, $userId = null) {
 		$userId = $userId == null ? $this->userId : $userId;
 		$userIsAdmin = $this->Group->GroupsUser->find('first', array(

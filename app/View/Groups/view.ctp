@@ -7,9 +7,6 @@ echo $this->Html->css(array(
 	'..'.DS.'js'.DS.'datatables'.DS.'tabletools'.DS.'css'.DS.'TableTools_JUI',
 	'datatables'.DS.'datatables'
 		),'stylesheet', array('inline' => false ) );
-echo $this->element('groups'.DS.'linked_groups', array('cache' => false)); 
-echo $this->element('groups'.DS.'campaigns', array('cache' => false)); 
-echo $this->element('groups'.DS.'members', array('cache' => false)); 
 ?>
 <div id="group-page">
 	<div id="group-header">
@@ -17,15 +14,44 @@ echo $this->element('groups'.DS.'members', array('cache' => false));
 			
 		<?php if($this->Session->read('Auth.User')): ?>
 			<h4 class="right">
+			<?php if($userRole == 'Admin') : ?>
 
+			<?php echo $this->Html->link('Edit Group', array(
+	                'controller' => 'Groups',
+	                'action' => 'edit', $group['Group']['id'] 
+			)) . ' |';
+			?>
+
+			<?php echo $this->Html->link('Delete Group', array(
+	                'controller' => 'Groups',
+	                'action' => 'delete', $group['Group']['id'] 
+			));
+			?>	
+
+			<?php echo   '| ' . $this->Html->link('Waiting List', array(
+	                'controller' => 'Groups',
+	                'action' => 'waitingList', $group['Group']['id'] 
+			));
+			?>	
+			
+			<?php elseif($userRole == 'Member') : ?>
+			
+			<?php echo $this->Html->link('> Leave this Group', array(
+	                'controller' => 'Groups',
+	                'action' => 'unjoin', $group['Group']['id'] 
+			));
+			?>
+			<?php else: ?>
 			<?php echo $this->Html->link('> Join this Group', array(
 	                'controller' => 'Groups',
 	                'action' => 'join', $group['Group']['id'] 
 			));
 			?>
+			<p>Only by joining you can add contents to campaigns</p>
+			<?php endif; ?>
 			</h4>
 			<div class="clear"></div>
-			<p>Only by joining you can add contents to campaigns</p>
+			
 			
 			
     
@@ -50,16 +76,22 @@ echo $this->element('groups'.DS.'members', array('cache' => false));
 	<div class="clear"></div>
 	<div id="group_home_info">
 		<h3>
-		<?php echo $this->Html->link(__('Info'), array(
-	                'controller' => 'Groups',
-	                'action' => 'info' 
-		));
+		<?php echo $this->Html->link(__('Info'), '#');
 		?>
 		</h3>
 		<p>
 		<?php echo $group['Group']['lead']?>
 		</p>
 	</div>
+	<div id="group_home_body">
+	<h3>
+	<?php echo $this->Html->link(__('Description'), '#');
+	?>
+			</h3>
+			<p>
+			<?php echo $group['Group']['body']?>
+			</p>
+		</div>
 	<?php if($campaign_count):?>
 	<div id="group_home_campaigns">
 		<h3>
@@ -110,3 +142,9 @@ echo $this->element('groups'.DS.'members', array('cache' => false));
 
 </div>
 <div class="clear"></div>
+<?php 
+echo $this->element('groups'.DS.'linked_groups', array('cache' => false));
+echo $this->element('groups'.DS.'campaigns', array('cache' => false));
+echo $this->element('groups'.DS.'members', array('cache' => false));
+echo $this->element('groups'.DS.'admins', array('cache' => false));
+?>
