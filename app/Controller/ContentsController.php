@@ -72,6 +72,7 @@ class ContentsController extends AppController {
 		if(isset($this->userId)) {
 			if (!empty($this->data)) {// If form has been posted
 				$this->Content_->setAllContentDataForSave($this->data);
+				
 // 				$this->Tag_->setTagsForSave($this->data['Tags']['tags'],$this->data['Privileges']);
 // 				$this->Company_->setCompaniesForSave($this->data['Companies']['companies'],$this->data['Privileges']);
 			}
