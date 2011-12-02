@@ -393,21 +393,6 @@ class User extends AppModel {
 			'deleteQuery' => '',
 			'insertQuery' => ''
 		),
-		'Tag' => array(
-			'className' => 'Tag',
-			'joinTable' => 'tags_users',
-			'foreignKey' => 'user_id',
-			'associationForeignKey' => 'tag_id',
-			'unique' => true,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'finderQuery' => '',
-			'deleteQuery' => '',
-			'insertQuery' => ''
-		),
 		'PrivateMessage' => array(
 			'className' => 'PrivateMessage',
 			'joinTable' => 'users_private_messages',
