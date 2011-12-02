@@ -89,7 +89,9 @@ class Campaign extends AppModel {
 			'finderQuery' => '',
 			'deleteQuery' => '',
 			'insertQuery' => ''
-		),
+			),
+			
+		
 		'Language' => array(
 			'className' => 'Language',
 			'joinTable' => 'campaigns_languages',
@@ -180,21 +182,7 @@ class Campaign extends AppModel {
 			'deleteQuery' => '',
 			'insertQuery' => ''
 		),
-		'Tag' => array(
-			'className' => 'Tag',
-			'joinTable' => 'campaigns_tags',
-			'foreignKey' => 'campaign_id',
-			'associationForeignKey' => 'tag_id',
-			'unique' => true,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'finderQuery' => '',
-			'deleteQuery' => '',
-			'insertQuery' => ''
-		),
+		
 		'Town' => array(
 			'className' => 'Town',
 			'joinTable' => 'campaigns_towns',
@@ -225,6 +213,10 @@ class Campaign extends AppModel {
 			'deleteQuery' => '',
 			'insertQuery' => ''
 		)
+		
+		
 	);
 
 }
+
+

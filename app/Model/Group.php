@@ -254,36 +254,6 @@ class Group extends AppModel {
 			'deleteQuery' => '',
 			'insertQuery' => ''
 		),
-// 		'Request' => array(
-// 			'className' => 'Request',
-// 			'joinTable' => 'groups_requests',
-// 			'foreignKey' => 'group_id',
-// 			'associationForeignKey' => 'request_id',
-// 			'unique' => true,
-// 			'conditions' => '',
-// 			'fields' => '',
-// 			'order' => '',
-// 			'limit' => '',
-// 			'offset' => '',
-// 			'finderQuery' => '',
-// 			'deleteQuery' => '',
-// 			'insertQuery' => ''
-// 		),
-		'Tag' => array(
-			'className' => 'Tag',
-			'joinTable' => 'groups_tags',
-			'foreignKey' => 'group_id',
-			'associationForeignKey' => 'tag_id',
-			'unique' => true,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'finderQuery' => '',
-			'deleteQuery' => '',
-			'insertQuery' => ''
-		),
 		'Town' => array(
 			'className' => 'Town',
 			'joinTable' => 'groups_towns',

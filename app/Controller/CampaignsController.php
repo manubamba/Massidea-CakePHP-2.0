@@ -1,126 +1,106 @@
 <?php
-App::uses('AppController', 'Controller');
-/**
- * Campaigns Controller
- *
- * @property Campaign $Campaign
- */
+
+ // Campaigns Edit method
+ 
+
+
 class CampaignsController extends AppController {
-
-
-/**
- * index method
- *
- * @return void
- */
-	public function index() {
-		$this->Campaign->recursive = 0;
-		$this->set('campaigns', $this->paginate());
+	function beforeFilter() {
+		parent::beforeFilter();
 	}
 
-/**
- * view method
- *
- * @param string $id
- * @return void
- */
-	public function view($id = null) {
-		$this->Campaign->id = $id;
-		if (!$this->Campaign->exists()) {
-			throw new NotFoundException(__('Invalid campaign'));
-		}
-		$this->set('campaign', $this->Campaign->read(null, $id));
-	}
+	function edit($campaignId = null) {
+		$campaign = $this->Campaign->find('first', array(
+			'conditions' => array(
+				'id' => $campaignId
+			),
+			
+		));
+		
+		$groupId = $campaign['Group'][0]['id'];
+	if($this->getUserRole($groupId) == 'Admin') {
+		if($this->request->data) {
+			//debug($this->request->data);
+			if($this->Campaign->save($this->request->data)) {
+			
+		//	$this->redirect('/')
 
-/**
- * add method
- *
- * @return void
- */
-	public function add() {
-		if ($this->request->is('post')) {
-			$this->Campaign->create();
-			if ($this->Campaign->save($this->request->data)) {
-				$this->Session->setFlash(__('The campaign has been saved'));
-				$this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The campaign could not be saved. Please, try again.'));
-			}
-		}
-		$comments = $this->Campaign->Comment->find('list');
-		$contents = $this->Campaign->Content->find('list');
-		$files = $this->Campaign->File->find('list');
-		$flags = $this->Campaign->Flag->find('list');
-		$groups = $this->Campaign->Group->find('list');
-		$languages = $this->Campaign->Language->find('list');
-		$links = $this->Campaign->Link->find('list');
-		$personalTags = $this->Campaign->PersonalTag->find('list');
-		$privateMessages = $this->Campaign->PrivateMessage->find('list');
-		$ratings = $this->Campaign->Rating->find('list');
-		$relatedCompanies = $this->Campaign->RelatedCompany->find('list');
-		$tags = $this->Campaign->Tag->find('list');
-		$towns = $this->Campaign->Town->find('list');
-		$users = $this->Campaign->User->find('list');
-		$this->set(compact('comments', 'contents', 'files', 'flags', 'groups', 'languages', 'links', 'personalTags', 'privateMessages', 'ratings', 'relatedCompanies', 'tags', 'towns', 'users'));
-	}
-
-/**
- * edit method
- *
- * @param string $id
- * @return void
- */
-	public function edit($id = null) {
-		$this->Campaign->id = $id;
-		if (!$this->Campaign->exists()) {
-			throw new NotFoundException(__('Invalid campaign'));
-		}
-		if ($this->request->is('post') || $this->request->is('put')) {
-			if ($this->Campaign->save($this->request->data)) {
-				$this->Session->setFlash(__('The campaign has been saved'));
-				$this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The campaign could not be saved. Please, try again.'));
 			}
 		} else {
-			$this->request->data = $this->Campaign->read(null, $id);
+			//debug($this->request->data);	
+			$this->data = $campaign;
 		}
-		$comments = $this->Campaign->Comment->find('list');
-		$contents = $this->Campaign->Content->find('list');
-		$files = $this->Campaign->File->find('list');
-		$flags = $this->Campaign->Flag->find('list');
-		$groups = $this->Campaign->Group->find('list');
-		$languages = $this->Campaign->Language->find('list');
-		$links = $this->Campaign->Link->find('list');
-		$personalTags = $this->Campaign->PersonalTag->find('list');
-		$privateMessages = $this->Campaign->PrivateMessage->find('list');
-		$ratings = $this->Campaign->Rating->find('list');
-		$relatedCompanies = $this->Campaign->RelatedCompany->find('list');
-		$tags = $this->Campaign->Tag->find('list');
-		$towns = $this->Campaign->Town->find('list');
-		$users = $this->Campaign->User->find('list');
-		$this->set(compact('comments', 'contents', 'files', 'flags', 'groups', 'languages', 'links', 'personalTags', 'privateMessages', 'ratings', 'relatedCompanies', 'tags', 'towns', 'users'));
+	} else {
+		$this->redirect('/');
 	}
+		
+// 		
+// 		} else {
+// 			$this->redirect('/');	
+// 		}
+		
+	}
+		
+// 			if($this->request->data) {
+// 				if($this->Campaign->save($this->request->data)) {
+					
+// 				}
+// 			} else {
+				
+			
+// 		} else {
+// 			$this->Campaign->id = $campaignId;
+// 			$this->data = $this->Campaign->read();
+		
+// 			//$this->redirect('/');
+// 		}
+		
 
-/**
- * delete method
- *
- * @param string $id
- * @return void
- */
-	public function delete($id = null) {
-		if (!$this->request->is('post')) {
-			throw new MethodNotAllowedException();
-		}
-		$this->Campaign->id = $id;
-		if (!$this->Campaign->exists()) {
-			throw new NotFoundException(__('Invalid campaign'));
-		}
-		if ($this->Campaign->delete()) {
-			$this->Session->setFlash(__('Campaign deleted'));
-			$this->redirect(array('action'=>'index'));
-		}
-		$this->Session->setFlash(__('Campaign was not deleted'));
-		$this->redirect(array('action' => 'index'));
+function getUserRole($groupId, $userId = null) {
+		$userId = ($userId == null) ? $this->userId : $userId;
+		$userIsAdmin = $this->Campaign->Group->GroupsUser->find('first', array(
+										'conditions' => array(
+											'User.id' => $userId,
+											'Group.id' => $groupId
+										),
+										'recursive' => 2					
+		));		
+		return $userIsAdmin['UserRole']['name'];
+	}
+	
+}	
+
+	
+	/*function edit($campaignId = null) {	
+		if($this->getUserRole($campaignId) == 'Admin')
+		if($this->request->data) {
+			//debug($this->data);
+			if($this->Campaign->save($this->request->data)) {											
+			}
+			else {
+			
+			}
+		} else {
+		$this->Campaign->id = $campaignId;
+		$this->data = $this->Campaign->read();
+			
+		//debug($campaignId);
+// 		$this->redirect('/');
+			}
+	}
+	
+	//debug($this->data);
+	function getUserRole($campaignId = null) {
+		$groupId = $groupId == null ? $this->groupId : $groupId;
+		$groupIsAdmin = $this->Campaign->CampaignsUser->find('first', array(
+											'conditions' => array(
+												'User.id' => $groupId,
+												'Campaign.id' => $campaignId
+		),
+											'recursive' => 2					
+		));
+		return $groupIsAdmin['UserRole']['name'];
 	}
 }
+
+**/

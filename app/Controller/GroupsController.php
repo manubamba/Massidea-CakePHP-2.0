@@ -55,7 +55,7 @@ class GroupsController extends AppController {
 	}
 
 	function view($groupId) {
-// 		debug($this->Session);
+	//debug($this->Session);
 		$userRole = $this->getUserRole($groupId);
 		$group = $this->Group->find('first', array(
 					'conditions' => array(
@@ -193,6 +193,7 @@ class GroupsController extends AppController {
 						));
 					}
 				} else {
+					
 					$this->Group->id = $groupId;
 					$this->data = $this->Group->read();
 				}
@@ -320,7 +321,7 @@ function join($groupId) {
 	}
 	
 	function getUserRole($groupId, $userId = null) {
-		$userId = $userId == null ? $this->userId : $userId;
+		$userId = ($userId == null) ? $this->userId : $userId;
 		$userIsAdmin = $this->Group->GroupsUser->find('first', array(
 										'conditions' => array(
 											'User.id' => $userId,
