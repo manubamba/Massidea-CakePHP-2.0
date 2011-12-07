@@ -25,15 +25,15 @@ echo $this->Html->css(array(
 			<?php echo $this->Html->link('Delete Group', array(
 	                'controller' => 'Groups',
 	                'action' => 'delete', $group['Group']['id'] 
-			));
+			)). ' |';
 			?>	
 
-			<?php echo   '| ' . $this->Html->link('Waiting List', array(
-	                'controller' => 'Groups',
-	                'action' => 'waitingList', $group['Group']['id'] 
+
+	<?php echo $this->Html->link( __('Create new campaign'), array(
+                'controller' => 'Campaigns',
+                'action' => 'add'
 			));
-			?>	
-			
+			?>			
 			<?php elseif($userRole == 'Member') : ?>
 			
 			<?php echo $this->Html->link('> Leave this Group', array(
@@ -42,12 +42,16 @@ echo $this->Html->css(array(
 			));
 			?>
 			<?php else: ?>
+			<?php if($isInWaitingList): ?>		
+			<?php 	echo "You are already in the waiting list!"; ?>
+			<?php else: ?>
 			<?php echo $this->Html->link('> Join this Group', array(
 	                'controller' => 'Groups',
 	                'action' => 'join', $group['Group']['id'] 
 			));
 			?>
-			<p>Only by joining you can add contents to campaigns</p>
+			<?php endif; ?>
+			<p>Only by joining you can add contents to groups</p>
 			<?php endif; ?>
 			</h4>
 			<div class="clear"></div>

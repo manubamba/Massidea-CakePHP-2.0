@@ -264,21 +264,7 @@ class Content extends AppModel {
 			'deleteQuery' => '',
 			'insertQuery' => ''
 		),
-		'Tag' => array(
-			'className' => 'Tag',
-			'joinTable' => 'contents_tags',
-			'foreignKey' => 'content_id',
-			'associationForeignKey' => 'tag_id',
-			'unique' => true,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'finderQuery' => '',
-			'deleteQuery' => '',
-			'insertQuery' => ''
-		),
+		
 		'Town' => array(
 			'className' => 'Town',
 			'joinTable' => 'contents_towns',

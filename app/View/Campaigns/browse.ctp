@@ -1,12 +1,10 @@
 
 
 <!-- the tabs "active, fothcoming, ended" files are  seperated from here -->
-
-
 <h2>
+	<?php echo __('Campaigns'); ?>
+	
 
-
-<?php echo __('Campaigns'); ?>
 </h2>
 
 <div id="tabs">

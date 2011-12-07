@@ -95,7 +95,20 @@ class Group extends AppModel {
 				'exclusive' => '',
 				'finderQuery' => '',
 				'counterQuery' => ''
-			)
+			),
+		'GroupsRequest' => array(
+				'className' => 'GroupsRequest',
+				'foreignKey' => 'group_id',
+				'dependent' => false,
+				'conditions' => '',
+				'fields' => '',
+				'order' => '',
+				'limit' => '',
+				'offset' => '',
+				'exclusive' => '',
+				'finderQuery' => '',
+				'counterQuery' => ''
+		)
 	);
 
 /**
@@ -269,21 +282,7 @@ class Group extends AppModel {
 // 			'deleteQuery' => '',
 // 			'insertQuery' => ''
 // 		),
-		'Tag' => array(
-			'className' => 'Tag',
-			'joinTable' => 'groups_tags',
-			'foreignKey' => 'group_id',
-			'associationForeignKey' => 'tag_id',
-			'unique' => true,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'finderQuery' => '',
-			'deleteQuery' => '',
-			'insertQuery' => ''
-		),
+		
 		'Town' => array(
 			'className' => 'Town',
 			'joinTable' => 'groups_towns',
@@ -315,5 +314,7 @@ class Group extends AppModel {
 			'insertQuery' => ''
 		)
 	);
-
+	
+	
+	
 }

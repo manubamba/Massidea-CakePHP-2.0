@@ -234,6 +234,7 @@ function campaignsCreateDatatable() {
 	return oTable;	
 }
 function membersInit() {
+	$( "#members_tabs" ).tabs();
 	membersCreateDatatable();
 	$("#memebers_dialog").dialog({
 		closeOnEscape: true,
@@ -316,6 +317,7 @@ $(document).ready(function(){
 	linkedGroupsInit();
 	campaignsInit();
 	membersInit();
+	
 	
 	
 });

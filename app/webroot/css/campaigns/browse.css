@@ -35,10 +35,11 @@
 #campaigns #browse-page .campaign .idea { border-left: 5px solid #4B9B07; }
 #campaigns #browse-page .campaign .vision { border-left: 5px solid #FFC726; }
 #campaigns #browse-page .campaign .photo img { width: 48px; height: 48px;  }
-#campaigns #browse-page .campaign .context { width: 435px; }
+#campaigns #browse-page .campaign .context { width: 435px; font-size: 12px;}
 #campaigns #browse-page .campaign a { color: #0089CF; }
-#campaigns #browse-page .campaign .context p { margin: 2px; }
+#campaigns #browse-page .campaign .context p { margin: 2px;  }
 #campaigns #browse-page .campaign p.translate { color: #999 }
 #campaigns #browse-page .summary_translatelink_meta { display:none; }
 #campaigns #browse-page #tabs { border: 0; padding: 0; }
 #campaigns #browse-page .ui-tabs-panel { padding:  1em 0}
+#campaigns #browse-page h2 { font-size: 18px; }

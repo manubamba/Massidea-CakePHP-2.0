@@ -58,6 +58,7 @@ class GroupsController extends AppController {
 	function view($groupId) {
 // 		debug($this->Session);
 		$userRole = $this->getUserRole($groupId);
+		$isInWaitingList = $this->isInWaitingList($groupId);
 		$group = $this->Group->find('first', array(
 					'conditions' => array(
 						'Group.id' => $groupId
@@ -150,6 +151,7 @@ class GroupsController extends AppController {
 		$this->set(compact('recent_linked_groups'));
 		$this->set(compact('linked_group_count'));
 		$this->set(compact('userRole'));
+		$this->set(compact('isInWaitingList'));
 	}	
 	
 	function add() {
@@ -229,10 +231,33 @@ function join($groupId) {
 					'group_id' => $groupId,
 					'user_id' => $this->userId,
 					'user_role_id' => 1,
-					'favourite' => 0	
-			);
-// 			debug($this->data); 
-			$this->Group->GroupsUser->save($this->data);					
+					'favourite' => 0					
+			);			
+			if($this->Group->find('first', array('conditions' => array('id' => $groupId, 'closed' => "0"))))	{
+				$this->request->data['GroupsUser'] = array(
+					'group_id' => $groupId,
+					'user_id' => $this->userId,
+					'user_role_id' => 1,
+					'favourite' => 0
+				);
+				$this->Group->GroupsUser->save($this->data);
+			
+			} else {
+				
+				$isInWaitingList = $this->isInWaitingList($groupId);
+				if(!$isInWaitingList) {
+					$this->request->data['GroupsRequest'] = array(
+							'group_id' => $groupId,
+							'user_id' => $this->userId
+					);							
+					$this->Group->GroupsRequest->save($this->data);
+				}
+			}
+			
+			
+			
+//debug($this->data); 
+							
 		} else {
 			$this->Session->setFlash('You are already a member!');
 		}
@@ -300,7 +325,33 @@ function join($groupId) {
 		));
 		echo json_encode($members);
 	}
-
+	function getWaitingList($groupId) {
+		$this->autoRender = false;
+		$this->autoLayout = false;
+		$members = $this->Group->GroupsRequest->find('all', array(
+						'contain' => array(
+								'User' => array(
+									'fields' => array(
+										'id',
+										'username',
+										
+		)),
+		
+								'Group' => array(
+									'fields' => array(
+										'id',
+										
+		))),
+		
+					'conditions' => array(
+		// 				'UserRole.name' => 'Admin',
+						'Group.id' => $groupId
+		),
+					'recursive' => 1
+		));
+		debug($members);
+		echo json_encode($members);
+	}
 	
 	function getAdminList($groupId) {
 		$this->autoRender = false;
@@ -331,6 +382,17 @@ function join($groupId) {
 										'recursive' => 2					
 		));		
 		return $userIsAdmin['UserRole']['name'];
+		
 	}
+	function isInWaitingList($groupId, $userId = null) {
+		$userId = ($userId == null) ? $this->userId : $userId;
+		$isInList = $this->Group->GroupsRequest->find('all', array(
+				'conditions' => array(
+					'user_id' => $userId,
+					'group_id' => $groupId)
+		));
+		return $isInList;
+	}
+	
 }
 
